@@ -1,0 +1,31 @@
+sudo: true
+os:
+    - osx
+    - linux
+language:
+    - c
+compiler:
+    - clang
+env:
+- VITASDK_VER=c86e2b4b45bd9cad07abbbcb208519b0357a639a
+
+before_install:
+    - ./bootstrap-vitasdk.sh
+    - export VITASDK=/usr/local/vitasdk
+    - export PATH=$VITASDK/bin:$PATH
+    - cp config.travis config
+
+script:
+    - ./vdpm -i zlib
+    - ./vdpm -i libpng
+    - ./vdpm -i libexif
+    - ./vdpm -i libjpeg
+    - ./vdpm -i jansson
+    - ./vdpm -i freetype
+    - ./vdpm -i sqlite
+    - ./vdpm -i fftw
+    - ./vdpm -i libvita2d
+    - ./vdpm -i libmad
+    - ./vdpm -i libogg
+    - ./vdpm -i libvorbis
+    - ./vdpm -i libpsp2shell

@@ -1,0 +1,1 @@
+- Completely removed R4300 64 bit emulation (PS Vita is a 32 bit processor only)

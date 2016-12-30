@@ -1,0 +1,17 @@
+TODO:
+
+	Rewrite the rendering engine to work for playstation vita's hardware
+		File								Line
+		-----------------------------------------
+		vidext_sld_compat.h					24
+		
+	Work on MMAP conversion to malloc
+		File								Line
+		-----------------------------------------
+		recomp.c							41
+		
+		
+	Random C++ Header files:
+		C++
+		|-4.9.3
+		<c++/4.9.3/fenv.h>
